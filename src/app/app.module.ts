@@ -8,6 +8,7 @@ import { FormAddCarComponent } from './form-add-car/form-add-car.component';
 
 import { FormsModule } from '@angular/forms';
 import { FormBuyComponent } from './form-buy/form-buy.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FormBuyComponent } from './form-buy/form-buy.component';
     CarListComponent,
     FormAddCarComponent,
     FormBuyComponent,
+    HeaderComponent,
 
   ],
   imports: [
