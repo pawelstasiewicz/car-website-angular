@@ -1,0 +1,49 @@
+<div class="main_form">
+    <h1 class="selected_car">Wybrałeś</h1>
+    <h2>Forma finansowania:</h2>
+    <div class="select_leasing_or_cash">
+        <input
+            type="radio"
+            name="option"
+            value="leasing"
+            checked
+            id="leasing_radio"
+        />
+        <label for="leasing">Leasing</label>
+        <input type="radio" name="option" value="cash" id="cash_radio" />
+        <label for="cash">Gotówka</label>
+    </div>
+    <h2>Dane osobowe:</h2>
+    <div class="personal_information">
+        <input type="text" placeholder="Imię i Nazwisko" class="nameInput" />
+        <input type="text" placeholder="Miejsce odbioru" class="placeInput" />
+    </div>
+    <div class="sending_date">
+        <label for="date" class="dateInfo">Data dostawy:</label>
+        <input type="date" name="date" id="date" class="date_chose" min="" max="" value="" required>
+        <!-- <select name="date" id="date" class="date_chose">
+            <option value="14 dni">14 dni</option>
+        </select> -->
+        
+    </div>
+    <h2>Akcesoria:</h2>
+    <div class="accessories">
+        <button class="wheelsBtn">
+            <h3>Opony zimowe</h3>
+            <p>2000.00 PLN</p>
+        </button>
+        <button class="guaranteeBtn">
+            <h3>Dodatkowy rok gwarancji</h3>
+            <p>5000.00 PLN</p>
+        </button>
+    </div>
+    <div class="price">
+        <h2>Cena całkowita:</h2>
+        <p></p>
+    </div>
+    <div class="btn_select_or_buy">
+        <button class="return">Powrót do wyboru</button>
+        <button class="buy">Kupuję</button>
+    </div>
+    <div class="warning"></div>
+</div>

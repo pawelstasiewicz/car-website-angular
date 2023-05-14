@@ -1,0 +1,7 @@
+<div *ngFor="let car of carList" class="carSection" (click)="formOpen(car)">
+    <img src={{car.imgURL}} class="carImg">
+    <h2>{{car.brand}}</h2>
+    <p class="text">Year: {{car.year}} </p>
+    <p class="text">Power: {{car.power}}</p>
+    <p class="text">Price: {{car.price}}</p>
+</div>

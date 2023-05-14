@@ -1,0 +1,35 @@
+.form_sell{
+    background-color: var(--shadowColor);
+    height: auto;
+}
+
+.sell_text{
+    padding: 20px 0;
+    text-align: center;
+}
+
+label{
+    margin: 10px;
+}
+
+.input_sell{
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+    text-align: center;
+}
+
+
+
+.btn_add_car{
+    margin: 20px 0;
+    padding: 10px 15px;
+    background-color: var(--textAndBtnColor);
+    border: none;
+    color: var(--h1Color);
+    border-radius: 10px;
+}

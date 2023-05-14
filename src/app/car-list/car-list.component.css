@@ -1,0 +1,20 @@
+.carImg{
+    width: 200px;
+    box-shadow: 0px 5px 10px var(--shadowColor);
+    margin: 15px 0;
+}
+
+.carSection{
+    width: 250px;
+    background-color: var(--h1Color);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 20px var(--shadowColor);
+    cursor: pointer;
+}
+
+.text{
+    font-size: 20px;
+}
