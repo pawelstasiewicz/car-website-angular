@@ -1,4 +1,4 @@
-<div *ngFor="let car of cars" class="carSection" (click)="formOpen(car)">
+<div *ngFor="let car of cars" class="carSection" (click)="toggleSection(car)" (click)="scrollToTop()">
     <img src={{car.imgURL}} class="carImg">
     <h2>{{car.brand}}</h2>
     <p class="text">Year: {{car.year}} </p>

@@ -1,3 +1,4 @@
+import { FormAnimation } from './../cars.service';
 import { Component } from '@angular/core';
 
 
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-buy.component.css']
 })
 export class FormBuyComponent {
+  constructor(private animationForm: FormAnimation) {}
 
+  get carClicked(): boolean{
+    return  this.animationForm.carClicked
+  }
+  
 }

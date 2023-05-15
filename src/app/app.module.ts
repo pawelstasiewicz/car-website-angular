@@ -1,3 +1,5 @@
+import { CarsService } from './cars.service';
+import { FormAnimation } from './cars.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -24,7 +26,7 @@ import { HeaderComponent } from './header/header.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CarsService, FormAnimation],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

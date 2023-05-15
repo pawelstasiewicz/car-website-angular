@@ -1,5 +1,5 @@
-<div class="main_form">
-    <h1 class="selected_car">Wybrałeś</h1>
+<div class="main_form" [class.active]="carClicked">
+    <h1 class="selected_car">Wybrałeś </h1>
     <h2>Forma finansowania:</h2>
     <div class="select_leasing_or_cash">
         <input
@@ -20,11 +20,7 @@
     </div>
     <div class="sending_date">
         <label for="date" class="dateInfo">Data dostawy:</label>
-        <input type="date" name="date" id="date" class="date_chose" min="" max="" value="" required>
-        <!-- <select name="date" id="date" class="date_chose">
-            <option value="14 dni">14 dni</option>
-        </select> -->
-        
+        <input type="date" name="date" id="date" class="date_chose" min="" max="" value="" required>        
     </div>
     <h2>Akcesoria:</h2>
     <div class="accessories">

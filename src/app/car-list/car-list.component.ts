@@ -1,5 +1,6 @@
-import { CarsService } from './../cars.service';
+import { CarsService, FormAnimation } from './../cars.service';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-car-list',
@@ -10,12 +11,20 @@ export class CarListComponent {
 
   cars: any[];
 
-  constructor(private carsService: CarsService){
+  constructor(
+    private carsService: CarsService,
+    private animationForm: FormAnimation,
+  ) {
     this.cars = this.carsService.carList
+
   }
 
-  formOpen(car: any[]){
-    console.log(car)
+  toggleSection(car: any[]){
+    this.animationForm.toggleForm()
+  }
+
+  scrollToTop(){
+    window.scrollTo({top:0, behavior: 'smooth'})
   }
  
 }

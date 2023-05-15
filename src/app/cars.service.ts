@@ -57,3 +57,15 @@ export class CarsService {
   ];
  
 }
+
+export class FormAnimation{
+  private _carClicked: boolean = false;
+
+  get carClicked(): boolean{
+    return this._carClicked
+  }
+
+  toggleForm(){
+    this._carClicked = !this._carClicked
+  }
+}
