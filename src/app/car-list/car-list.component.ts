@@ -21,6 +21,7 @@ export class CarListComponent {
 
   toggleSection(car: any[]){
     this.animationForm.toggleForm()
+    console.log(car)  
   }
 
   scrollToTop(){
